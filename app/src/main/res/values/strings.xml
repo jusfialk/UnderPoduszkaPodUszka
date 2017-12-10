@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">underpoduszka</string>
+    <string name="city">Podaj miejscowość</string>
+    <string name="name">Podaj imie</string>
+    <string name="Selectname">Wybierz imię</string>
+    <string name="Selectcity">Wybierz miasto</string>
+    <string name="Selectdate">Wybierz date</string>
+    <string name="Accelero">Akcelerometr</string>
+    <string name="Gyro">Gyroscope</string>
+    <string name="Micro">Microphone</string>
+</resources>

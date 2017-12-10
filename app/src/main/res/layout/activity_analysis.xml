@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Spinner
+        android:id="@+id/spinnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/name"
+        android:layout_toRightOf="@+id/name"
+        android:layout_alignBottom="@+id/name"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/spinnerCity"
+        android:layout_alignBottom="@+id/spinnerCity"
+        android:layout_alignTop="@+id/spinnerCity"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/name"
+        android:text="@string/Selectname"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/spinnerCity"
+        android:layout_toRightOf="@+id/city"
+        android:layout_alignBottom="@+id/city"
+        android:layout_alignTop="@+id/city"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/city"
+        android:text="@string/Selectcity"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/spinnerDate"
+        android:layout_toRightOf="@+id/date"
+        android:layout_alignTop="@+id/date"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignRight="@+id/name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@id/city"
+        android:layout_below="@+id/spinnerCity"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/date"
+        android:text="@string/Selectdate"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignTop="@+id/graph"
+        android:textSize="8dp"
+        android:id="@+id/accel"
+        android:text="@string/Accelero"
+        android:onClick="gyroGraph"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/accel"
+        android:textSize="8dp"
+        android:id="@+id/gyro"
+        android:text="@string/Gyro"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/gyro"
+        android:textSize="8dp"
+        android:id="@+id/micro"
+        android:text="@string/Micro"
+        />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_marginTop="15dp"
+        android:id="@+id/graph"
+        android:layout_below="@id/date"
+        android:layout_alignLeft="@id/date"
+        android:layout_marginLeft="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent" />
+
+
+
+</RelativeLayout>
+

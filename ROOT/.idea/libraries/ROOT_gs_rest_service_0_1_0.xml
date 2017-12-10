@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ROOT.gs-rest-service-0.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/libs/gs-rest-service-0.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
